@@ -1,66 +1,48 @@
 // pages/home/home.js
+// const app = getApp()
+// console.log(app.globalData.name)
+// console.log(app.globalData.age)
+
+// 注册页面
 Page({
+  handleGetUserInfo(event) {
+    console.log(event)
+  },
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
+  // 1.监听页面生命周期
+  onLoad() {
+    console.log('onLoad')
+  },
+  onReady() {
+    console.log('onReady')
+
+  },
+  onShow() {
+    console.log('onShow')
+
+  },
+  onHide() {
+    console.log('onHide')
+
+  },
+  onUnload() {
+    console.log('onUnload')
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  // j监听其他事件
+  onPageScroll(obj) {
+    console.log(obj)
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  // 监听页面滚动到底部
+  onReachBottom() {
+    console.log('页面到底部')
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  // 监听下拉
+  onPullDownRefresh() {
+    console.log('下拉刷新')
   }
+
 })
