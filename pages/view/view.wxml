@@ -1,0 +1,15 @@
+<!--pages/view/view.wxml-->
+
+<!-- 1.view基本使用 -->
+<view>ddddd</view>
+<view>fff</view>
+
+<!-- 2.hover-class -->
+<view hover-class="hover-view">eeee</view>
+
+<!-- 3.阻止冒泡 -->
+<view class="box2" hover-class="box2-hover">
+  <view class="box1" hover-class="hover-view" hover-stay-time="0" hover-stop-propagation>
+    box1
+  </view>
+</view>

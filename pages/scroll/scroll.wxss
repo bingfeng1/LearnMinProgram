@@ -1,0 +1,13 @@
+/* pages/scroll/scroll.wxss */
+.container1{
+  display: flex;
+}
+
+
+.item1{
+  width:100px;
+  height:100px;
+  background: red;
+  margin: 10px;
+  flex-shrink:0;
+}

@@ -1,0 +1,17 @@
+<!--pages/input/input.wxml-->
+<input />
+
+<!-- 2.value:input中的默认值 -->
+<input value="666"/>
+
+<!-- 3.type:决定键盘类型 -->
+<input type="number"/>
+
+<!-- 4.password:密码 -->
+<input password/>
+
+<!-- 5/placeholder:占位文字 -->
+<input placeholder="dddeefef"/>
+
+<!-- 6.input绑定事件 -->
+<input bindinput="handleInput" bindfocus="handleFocus" bindblur="handleBlur"/>

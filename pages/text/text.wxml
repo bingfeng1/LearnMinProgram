@@ -1,0 +1,18 @@
+<!--pages/text/text.wxml-->
+<!-- 行内元素 -->
+<text>Hello World</text>
+<text>你好小程序</text>
+
+<!-- 2.默认情况text中的文本长按是不能选中的 -->
+<text selectable>\n 可以长按选中</text>
+
+<!-- 3.space决定文本空格的大小 -->
+<!-- nbsp默认 -->
+<text space="nbsp">\nHello World</text>
+<!-- emsp一个中文字符大小 -->
+<text space="emsp">\nHello World</text>
+<!-- enspy半个中文字符大小 -->
+<text space="ensp">\nHello World</text>
+
+<!-- 4.是否解码文本 -->
+<text decode>\n&gt;</text>
