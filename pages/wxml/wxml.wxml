@@ -1,0 +1,13 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- 模板（现在以自定义组件为主） -->
+
+<!-- 模板包裹的内容，在没有被使用前，是不会被渲染的 -->
+<import src="/wxml/template.wxml"/>
+
+
+<include src="../../wxml/header.wxml"/>
+<template is="contentItem" data="{{btnText:'按钮1',content:'ddd'}}"/>
+<template is="contentItem" data="{{btnText:'按钮2',content:'ccc'}}"/>
+<template is="contentItem" data="{{btnText:'按钮3',content:'aaa'}}"/>
+
+<include src="/wxml/footer.wxml"/>
