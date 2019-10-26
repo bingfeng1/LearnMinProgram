@@ -1,0 +1,12 @@
+/* components/x-tab-control/x-tab-control.wxss */
+.tab{
+  display: flex;
+  justify-content: space-around;
+  background: orange;
+  height: 80rpx;
+  align-items: center;
+}
+
+.active{
+  color:pink;
+}

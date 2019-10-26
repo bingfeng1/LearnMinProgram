@@ -1,3 +1,52 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+
+<!-- 1.使用自定义组件 -->
+<my-cpn></my-cpn>
+
+<!-- 2.自定义组件样式问题 -->
+<my-style></my-style>
+
+<view>---------------------------</view>
+
+<!-- 3/给自定义主键传递数据/传递样式 -->
+<my-prop title="aaaaaa" titleclass="red"></my-prop>
+<my-prop title="bbbbbbbb" titleclass="blue"></my-prop>
+<my-prop></my-prop>
+
+<view>
+  当前计数：{{counter}}
+</view>
+<my-event bind:increment="handleIncrement" />
+<view>--------------</view>
+<x-tab-control data="{{tabList}}" bind:getTitle="getTitle" />
+
+<view>--------------</view>
+<!-- 6.直接选中组件修改数据，调用方法 -->
+<button size="mini" bindtap="handleIncrementCpn">修改组件内的数据</button>
+<my-sel id="sel-id"></my-sel>
+
+<view>-----------------------------</view>
+
+<!-- 7.插槽的使用 -->
+<!-- 单个插槽的使用 -->
+<my-slot>
+  <button size="mini">我是插入的按钮</button>
+</my-slot>
+<my-slot>
+  <text>插入的文字</text>
+</my-slot>
+<my-slot>
+  <image src="https://mp.weixin.qq.com/debug/zh_CN/htmledition/images/bg/bg_logo1f2fc8.png"></image>
+</my-slot>
+<my-slot>
+  <slider value="60"></slider>
+</my-slot>
+<!-- 多个插槽的使用 -->
+<!-- 1.需要给每个插槽创建名字 -->
+<!-- 2.必须在Component对象中添加options -->
+<my-mslot>
+  <button size="mini" slot="slot2">我是插入的按钮</button>
+  <slider value="60" slot="slot1"></slider>
+</my-mslot>
